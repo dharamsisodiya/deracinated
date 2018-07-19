@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 # opening the fits file
 
-event_filename = '/home/dharam/Documents/backup/project/fits/NIRCam LW/PSF_NIRCam_F250M_revV-1.fits'
+event_filename = '/home/dharam/Documents/fits/NIRCamLW/PSF_NIRCam_F250M_revV-1/PSF_NIRCam_F250M_revV-1.fits'
 
 # constructing the HDUlist
 # HDU is list class and is the top-level FITS object. When a FITS file is opened, a HDUList object is returned.
@@ -41,14 +41,14 @@ np_evt = np.array(evt_data_0)
 
 # opening the fits text files i have created i read in the amount of pixels in x and the amount in y
 
-with open('/home/dharam/Desktop/backup/project/fits/NIRCam LW/PSF_NIRCam_F250M_revV-1/PSF_NIRCam_F250M_revV-1.txt', 'r') as f:
+with open('/home/dharam/Documents/fits/NIRCamLW/PSF_NIRCam_F250M_revV-1/PSF_NIRCam_F250M_revV-1.txt', 'r') as f:
 
     for(NAXIS1) in f:
 
         NAXIS1 = f.readlines()[2]
         NAXIS1 = float(NAXIS1.split()[2])
 
-with open('/home/dharam/Desktop/backup/project/fits/NIRCam LW/PSF_NIRCam_F250M_revV-1/PSF_NIRCam_F250M_revV-1.txt', 'r') as f:
+with open('/home/dharam/Documents/fits/NIRCamLW/PSF_NIRCam_F250M_revV-1/PSF_NIRCam_F250M_revV-1.txt', 'r') as f:
 
     for(NAXIS2) in f:
         NAXIS2 = f.readlines()[2]
