@@ -190,11 +190,7 @@ nn_arr = nn_arr-var
 print(max(nn_arr))
 
 
-plt.plot(nn, nn_arr)
-plt.margins(0.02)
-plt.xlabel('$nn$')
-plt.ylabel('$norm$')
-plt.show()
+I_theta_arr[ci][cj]
 
 # closing the HDU list
 
